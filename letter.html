@@ -1,14 +1,214 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Letter ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Letter For Anjana ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #2b1723, #572b40, #21131d);
+  font-family: Georgia, serif;
+  color: #fff0f4;
+  text-align: center;
+  padding: 25px 15px 45px;
+  overflow-x: hidden;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  color: #ff9bb8;
+  opacity: 0.6;
+  animation: float 9s linear infinite;
+  pointer-events: none;
+}
+
+.heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+.heart:nth-child(2) { left: 80%; animation-delay: 3s; }
+.heart:nth-child(3) { left: 45%; animation-delay: 5s; }
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0); opacity: 0; }
+  20% { opacity: 0.7; }
+  100% { transform: translateY(-110vh) rotate(35deg); opacity: 0; }
+}
+
+.container {
+  position: relative;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 30px 20px;
+  background: rgba(255, 240, 245, 0.08);
+  border: 1px solid rgba(255, 210, 225, 0.25);
+  border-radius: 25px;
+  box-shadow: 0 15px 50px #00000050;
+  backdrop-filter: blur(8px);
+}
+
+.tag {
+  color: #ffb6ca;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.envelope {
+  font-size: 55px;
+  margin: 12px 0;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.08); }
+}
+
+h1 {
+  color: #ffd2df;
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.intro {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #f7dce5;
+  margin: 15px 0 28px;
+}
+
+.line {
+  width: 75px;
+  height: 1px;
+  background: #ffb6ca;
+  margin: 25px auto;
+}
+
+.photo-frame {
+  background: #fff7f0;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 10px 35px #00000060;
+  transform: rotate(-1deg);
+  margin: 15px auto;
+  max-width: 540px;
+}
+
+.photo-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.caption {
+  color: #75465a;
+  font-size: 13px;
+  padding-top: 12px;
+  font-style: italic;
+}
+
+.closing {
+  margin-top: 35px;
+  line-height: 2;
+  color: #f8dce5;
+  font-size: 16px;
+}
+
+.closing strong {
+  color: #ffb2c9;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 13px 25px;
+  border: 1px solid #ffb6ca;
+  border-radius: 30px;
+  color: #ffe3eb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.back:hover {
+  background: #ffb6ca;
+  color: #422031;
+}
+
+.footer {
+  margin-top: 28px;
+  color: #d9a8b9;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+</style>
 </head>
-<body style="background:#fce8ec;text-align:center;padding:20px;">
-  <h1>My Dear Anjana ❤️</h1>
-  <img src="letter.jpg" style="width:100%;max-width:500px;border-radius:12px;">
-  <h3>Forever Yours, HaSiNuR ❤️</h3>
+
+<body>
+
+<div class="heart">❤️</div>
+<div class="heart">♡</div>
+<div class="heart">💗</div>
+
+<div class="container">
+
+  <div class="tag">A LITTLE PIECE OF MY HEART</div>
+
+  <div class="envelope">💌</div>
+
+  <h1>For My Dear Anjana</h1>
+
+  <p class="intro">
+    Some feelings are too special to be spoken...
+    <br>
+    So I wrote them with my own hands,
+    just for you. ❤️
+    <br><br>
+    Even when distance keeps us apart,
+    my heart will always be close to you.
+  </p>
+
+  <div class="line"></div>
+
+  <div class="photo-frame">
+    <img
+      src="letter.jpg"
+      alt="HaSiNuR's handwritten letter for Anjana"
+    >
+    <div class="caption">
+      Every word written with love, only for you ❤️
+    </div>
+  </div>
+
+  <div class="closing">
+    No matter how far you go,<br>
+    you will always have a special place in my heart.
+    <br><br>
+    Forever Yours,<br>
+    <strong>HaSiNuR ❤️</strong>
+  </div>
+
+  <a href="index.html" class="back">
+    ← Back to Our Story
+  </a>
+
+  <div class="footer">
+    MADE WITH LOVE • JUST FOR ANJANA
+  </div>
+
+</div>
+
 </body>
 </html>
