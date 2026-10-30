@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Love Story ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #160d18;
+  color: white;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+section {
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background: linear-gradient(160deg, #260e25, #100b18);
+}
+
+h1 {
+  color: #ffb6d5;
+  font-size: 38px;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #ffb6d5;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 500px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #f6e4ed;
+}
+
+.heart {
+  font-size: 65px;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.2); }
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background: #ff75ae;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.photo {
+  width: 90%;
+  max-width: 320px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 15px;
+  border: 2px solid #ffb6d5;
+}
+
+.letter {
+  max-width: 500px;
+  padding: 30px;
+  background: #ffffff10;
+  border: 1px solid #ffb6d555;
+  border-radius: 20px;
+  text-align: left;
+}
+
+footer {
+  padding: 25px;
+  color: #ffb6d5;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="heart">❤️</div>
+  <h2>A Special Surprise For You</h2>
+
+  <h1>YOUR NAME ❤️ HER NAME</h1>
+
+  <p>
+    Meri Jaan, ye chhoti si website sirf tumhare liye hai.
+    Ismein hamari yaadein aur mere dil ki baatein hain.
+  </p>
+
+  <button onclick="document.getElementById('memories').scrollIntoView()">
+    Open Our Story 💌
+  </button>
+</section>
+
+<section id="memories">
+  <h1>Our Beautiful Memories 📸</h1>
+
+  <p>
+    Tumhare saath bitaya har pal mere liye special hai.
+    Ye yaadein hamesha mere dil mein rahengi.
+  </p>
+
+  <img class="photo" src="photo1.jpg" alt="Memory 1">
+  <img class="photo" src="photo2.jpg" alt="Memory 2">
+  <img class="photo" src="photo3.jpg" alt="Memory 3">
+</section>
+
+<section>
+  <div class="heart">🥹❤️</div>
+  <h1>Ek Baat Kahoon?</h1>
+
+  <p>
+    Chahe hum kitni bhi door kyun na ho,
+    tum mere dil ke hamesha kareeb rahogi.
+    <br><br>
+    Ye 4 mahine mushkil honge,
+    lekin hamari yaadein mere saath rahengi.
+  </p>
+</section>
+
+<section>
+  <h1>One Last Letter 💌</h1>
+
+  <div class="letter">
+    <h2>Meri Jaan ❤️</h2>
+
+    <p>
+      Pata nahi tumhare jaane ke baad ye 4 mahine
+      kaise guzrenge. Sach kahun toh abhi se tumhari
+      yaad aa rahi hai.
+      <br><br>
+
+      Apna bahut khayal rakhna, time par khana khana
+      aur apni smile kabhi mat khona.
+      <br><br>
+
+      Ho sakta hai hum roz baat na kar paayein,
+      lekin iska matlab ye nahi ki tum mere dil se
+      door ho jaogi.
+      <br><br>
+
+      Main bas yahi chahta hoon ki jab hum dobara
+      baat karein toh wahi pyaar aur wahi smile ho.
+      <br><br>
+
+      I LOVE YOU SO MUCH! ❤️
+      <br><br>
+
+      Hamesha tumhara ❤️
+    </p>
+  </div>
+</section>
+
+<footer>
+  Made With Love ❤️
+  <br>
+  Forever & Always
+</footer>
+
+</body>
+</html>
